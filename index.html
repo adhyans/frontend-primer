@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter clone</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #main-header {
+      display: flex;
+      justify-content: center;
+      height: 75px;
+      background-color: blue;
+    }
+    header p {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #main-description {
+      display: flex;
+      height: 100vh;
+    }
+    #read-tweets {
+      flex: 1;
+    }
+    #post-tweets {
+      flex: 1;
+    }
+    #read-tweets header {
+      background-color: black;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+      color: white;
+    }
+    #post-tweets header {
+      background-color: black;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+      color: white;
+    }
+    #read-tweets main {
+      height: 100%;
+      border-right: 5px solid black;
+    }
+    #post-tweets main {
+      height: 100%;
+    }
+    #read-tweets .card {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      height: 200px;
+      border: 1px solid blue;
+    }
+    .user-image img {
+      border-radius: 50%;
+      width: 100px;
+    }
+    #read-tweets .card .description {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header id="main-header">
+    <p>Twitter Clone</p>
+  </header>
+  <main id="main-description">
+    <div id="read-tweets">
+      <header>
+        Tweets
+      </header>
+      <main id="tweets-list">
+      </main>
+    </div>
+    <div id="post-tweets">
+      <header>
+        Post Tweet
+      </header>
+      <main>
+        <div id="post-tweet">
+          <input type="text" name="tweet" id="tweet">
+          <button>TWEET</button>
+        </div>
+      </main>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>
