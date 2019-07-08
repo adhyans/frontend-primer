@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front End Primer</title>
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    height: 100px;
+    text-align: center;
+    color: white;
+  }
+  main {
+    display: flex;
+  }
+  main .read-tweets {
+    flex: 1;
+    height: 50px;
+    background-color: gray;
+  }
+  .read-tweets .heading {
+    text-align: center;
+  }
+  main .post-tweets {
+    flex: 1;
+    text-align: center;
+    height: 50px;
+    background-color: lightgray;
+  }
+  .tweets {
+    border-right: 5px solid black;
+    height: 100vh;
+  }
+  .card-wrapper {
+    height: 100vh;
+    border-right: 5px solid black;
+    padding: 10px;
+  }
+  .card {
+    margin-top: 10px;
+    border: 1px solid green;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .card .info {
+    display: flex;
+  }
+  .card-img {
+    width: 200px;
+  }
+  .card-img img {
+    border-radius: 50%;
+  }
+</style>
+<body>
+  <header>
+    <h1>
+      Twitter Clone
+    </h1>
+  </header>
+  <main>
+    <div class="read-tweets">
+      
+      <p class="heading">Tweets</p>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg" alt="">
+          </div>
+          <div class="info">
+            <div>
+              <p>Adhyan Srivastav</p>
+              <p>@zomato</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam numquam officia quia quam, maxime illum a itaque illo dolore fugit non deserunt voluptas soluta repellendus cum. Tempora obcaecati modi esse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+      </div>
+    </div>
+    <div class="post-tweets">
+      <p>Post Tweets</p>
+    </div>
+  </main>
+</body>
+</html>
